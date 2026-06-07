@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <title>Blogger Theme V5 — Government Futuristic</title>
+    <meta name="description" content="Tema Blogger XML telah didesain ulang dengan gaya situs pemerintah resmi yang terang, bersih, dan profesional — dipadukan dengan sentuhan futuristik modern.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blogger Theme V5 — Government Futuristic">
+    <meta property="og:description" content="Tema Blogger XML telah didesain ulang dengan gaya situs pemerintah resmi yang terang, bersih, dan profesional — dipadukan dengan sentuhan futuristik modern.">
+    <meta property="og:site_name" content="Blogger Theme V5 Government Futuristic">
+    
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kangtoer">
+    <meta name="twitter:title" content="Blogger Theme V5 — Government Futuristic">
+    <meta name="twitter:description" content="Tema Blogger XML telah didesain ulang dengan gaya situs pemerintah resmi yang terang, bersih, dan profesional — dipadukan dengan sentuhan futuristik modern.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        /* CATATAN GURU IPS — V5 GOVERNMENT FUTURISTIC */
+        :root {
+            --primary: #1565C0;
+            --primary-light: #1E88E5;
+            --primary-darker: #0D47A1;
+            --gold: #D4A017;
+            --teal: #00897B;
+            --bg-body: #F5F7FA;
+            --bg-primary: #FFFFFF;
+            --text-primary: #1A202C;
+            --text-secondary: #4A5568;
+            --border: #E2E8F0;
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-body);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-light);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Styles */
+        header {
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 24px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo i {
+            font-size: 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 4rem 0;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: var(--primary-darker);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(21, 101, 192, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--gold);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background: #C89010;
+        }
+
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            transform: translateY(-4px);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        footer .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        footer h4 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: rgba(255,255,255,0.8);
+        }
+
+        footer a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-landmark"></i>
+                Blogger Theme V5
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Fitur</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="https://github.com/guruips/Blogger-Theme-V5-Government-Futuristic" target="_blank">Repository</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Blogger Theme V5 — Government Futuristic</h1>
+                <p>Tema Blogger XML telah didesain ulang dengan gaya situs pemerintah resmi yang terang, bersih, dan profesional — dipadukan dengan sentuhan futuristik modern.</p>
+                <a href="https://github.com/guruips/Blogger-Theme-V5-Government-Futuristic" class="btn" target="_blank">
+                    <i class="fas fa-download"></i> Unduh Template
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">✨ Fitur Unggulan</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3><i class="fas fa-paint-brush"></i> Desain Modern</h3>
+                    <p>Antarmuka yang bersih, terang, dan profesional dengan sentuhan futuristik yang memukau.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-mobile-alt"></i> Responsif</h3>
+                    <p>Tampilan sempurna di semua perangkat — desktop, tablet, dan smartphone.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-rocket"></i> Performa Cepat</h3>
+                    <p>Dioptimalkan untuk kecepatan loading dan SEO yang maksimal.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-code"></i> XML Blogger Native</h3>
+                    <p>Format XML asli Blogger — integrasi sempurna tanpa ketergantungan eksternal.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-shield-alt"></i> Aman & Terpercaya</h3>
+                    <p>Kode bersih dan aman dengan standar web best practices terkini.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-search"></i> SEO Friendly</h3>
+                    <p>Meta tags lengkap, Open Graph, dan Twitter Cards untuk optimalisasi mesin pencari.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container" style="margin-top: 3rem;">
+            <div class="grid grid-2">
+                <div>
+                    <h2>Tentang Template Ini</h2>
+                    <p style="color: var(--text-secondary); margin: 1rem 0;">
+                        Template Blogger V5 Government Futuristic adalah hasil desain ulang komprehensif yang menggabungkan estetika pemerintah modern dengan nuansa futuristik. Setiap elemen dirancang dengan cermat untuk memberikan pengalaman pengguna yang optimal.
+                    </p>
+                    <h3 style="margin-top: 1.5rem; margin-bottom: 1rem;">Teknologi yang Digunakan:</h3>
+                    <ul style="list-style: none; color: var(--text-secondary);">
+                        <li>✓ HTML5 Semantic</li>
+                        <li>✓ CSS3 Modern dengan CSS Variables</li>
+                        <li>✓ Blogger XML Template Language</li>
+                        <li>✓ Font Awesome Icons 6.5.0</li>
+                        <li>✓ Google Fonts (Plus Jakarta Sans, Playfair Display)</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/400x300/1565C0/FFFFFF?text=Blogger+Theme+Preview" alt="Theme Preview" style="border-radius: 12px; box-shadow: var(--shadow-md);">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div>
+                <h4>Tentang</h4>
+                <p>Template Blogger XML profesional dengan desain pemerintah futuristik untuk blog Anda.</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="https://github.com/guruips" target="_blank">GitHub Profile</a></li>
+                    <li><a href="https://github.com/guruips/Blogger-Theme-V5-Government-Futuristic" target="_blank">Repository</a></li>
+                    <li><a href="#" target="_blank">Demo Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Kontak</h4>
+                <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+                <p>Twitter: <a href="https://twitter.com/kangtoer" target="_blank">@kangtoer</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Blogger Theme V5 Government Futuristic. Dibuat dengan <i class="fas fa-heart" style="color: var(--gold);"></i> oleh Guru IPS</p>
+        </div>
+    </footer>
+</body>
+</html>
