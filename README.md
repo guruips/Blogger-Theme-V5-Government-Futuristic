@@ -142,9 +142,10 @@ Anda dapat berkontribusi dengan:
 
 **Catatan Guru IPS** — Portal edukasi IPS, Bank Soal, CPNS SKD, dan EdTech Tools
 
-🌐 Website: [catatanguruips.com](https://catatanguruips.com)  
-📧 Email: contact@catatanguruips.com  
+🌐 Website: [catatanguruips.com](https://toer.my.id)  
+📧 Email: mail@toer.my.id  
 🐙 GitHub: [@guruips](https://github.com/guruips)
+🌐 Whatsapp channel : https://whatsapp.com/channel/0029Vb6R2Ny2v1J1dll5Mq27
 
 ---
 
